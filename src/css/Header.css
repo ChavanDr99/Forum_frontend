@@ -1,0 +1,13 @@
+
+.react-responsive-modal-modal {
+    width: 70vw;
+    height: 80vh;
+  }
+  
+  .quill {
+ 
+    height: 50vh;
+  }
+  .react-responsive-modal-overlay{
+    background: rgb(0 0 0/75%);
+  }
