@@ -78,7 +78,7 @@ const Post = ({ post ,index}) => {
   return (
      <>
   
-    < motion.div   className="flex flex-col p-2 bg-white mt-3 ml-8 max-md:ml-0 border border-lightgray rounded-lg w-[80%] max-md:w-[100%] shadow-2xl">
+    < motion.div   className="flex flex-col p-2 bg-white mt-5 ml-8 max-md:ml-0 border border-lightgray rounded-lg w-[80%] max-md:w-[100%] shadow-2xl">
       <div className="flex items-center">
         <Avatar src={post?.user?.photo} />
         <h4 className="ml-2 cursor-pointer text-sm">{post?.user?.userName}</h4>
@@ -91,7 +91,7 @@ const Post = ({ post ,index}) => {
       <div className="flex flex-col">
         <div className="mt-5 font-bold mb-5 cursor-pointer flex items-center flex-1">
           <p className="font-sans md:font-serif text-gray-800">{post?.questionName}</p>
-          <button onClick={() => setIsModalOpen(true)} className='ml-auto cursor-pointer px-3 py-1  border border-gray-800 bg-gray-300 hover:bg-gray-400 outline-none  text-md  rounded-md'>Answer</button>
+          <button onClick={() => setIsModalOpen(true)} className='ml-auto cursor-pointer px-1 md:px-3 py-1  border border-gray-800 bg-gray-300 hover:bg-gray-400 outline-none  text-md  rounded-md'>Answer</button>
 
           <Modal open={IsModalOpen} CloseIcon={Close}
             onClose={() => setIsModalOpen(false)}
@@ -107,7 +107,7 @@ const Post = ({ post ,index}) => {
             </div>
             <div className="flex items-center justify-between mt-10 w-full ">
               <button onClick={() => setIsModalOpen(false)} className='   hover:text-red-500  border border-gray-800  m-2 max-md:mt-10 md:mt-5 outline-none font-semibold px-4 py-2 rounded-full cursor-pointer'>Cancel</button>
-              <button onClick={handleSubmit} type='submit' className=' border border-gray-800 outline-none m-2 max-md:mt-10 md:mt-5  hover:bg-blue-600 hover:text-gray-900 font-bold px-4 py-2 rounded-full cursor-pointer w-1/2'> Add Answer</button>
+              <button onClick={handleSubmit} type='submit' className=' border border-gray-800 outline-none m-2 max-md:mt-10 md:mt-5  hover:text-white hover:bg-blue-600 font-bold px-4 py-2 rounded-full cursor-pointer w-1/2'> Add Answer</button>
 
             </div>
           </Modal>
@@ -130,7 +130,7 @@ const Post = ({ post ,index}) => {
       <div className="flex justify-end mt-2">
         <button
           onClick={toggleAnswers}
-          className=" border border-gray-800  rounded ml-5  px-3 py-1 cursor-pointer hover:bg-blue-600"
+          className=" border border-gray-800  rounded ml-5  px-3 py-1 cursor-pointer hover:text-white hover:bg-blue-600"
         >
           {showAnswers ? (
             <>

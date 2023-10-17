@@ -89,7 +89,7 @@ const Header = () => {
           </span>
         </div>
         <div className="bg-blue-500 rounded px-3 py-0   cursor-pointer hover:bg-blue-600 ">
-          <Button  className='font-sans md:font-serif'onClick={() => setIsModalOpen(true)} >Add Question</Button>
+          <Button  className='font-sans hover:text-white md:font-serif'onClick={() => setIsModalOpen(true)} >Add Question</Button>
         </div>
         </div>
       </div>
@@ -102,7 +102,7 @@ const Header = () => {
 
 
         <div className="flex items-center mb-5 border-b border-opacity-50 border-gray-500 w-[100%]">
-          <h5 className='text-gray-500 text-2xl cursor-pointer font-semibold mr-8 hover:text-red-600'>Add Question</h5>
+          <h5 className='text-gray-500 text-2xl cursor-pointer  font-semibold mr-8 hover:text-red-600'>Add Question</h5>
           <h5 className='text-gray-500 text-2xl cursor-pointer font-semibold mr-8 hover:text-red-600'>Share Link</h5>
         </div>
         <div className="flex items-center mt-10">
@@ -129,7 +129,7 @@ const Header = () => {
         </div>
         <div className="flex flex-col-reverse mt-10 items-center">
           <button onClick={() => setIsModalOpen(false)} className=' hover:text-red-500  border border-gray-800  m-2 max-md:mt-10 md:mt-5 outline-none font-semibold px-4 py-2 rounded-full cursor-pointer'>Cancel</button>
-          <button onClick={handleSubmit} type='submit' className='border border-gray-800 outline-none m-2 max-md:mt-10 md:mt-5  hover:bg-blue-600 hover:text-gray-900 font-bold px-4 py-2 rounded-full cursor-pointer w-1/2'> Add Question</button>
+          <button onClick={handleSubmit} type='submit' className='border border-gray-800 outline-none m-2 max-md:mt-10 md:mt-5  hover:text-white hover:bg-blue-600  font-bold px-4 py-2 rounded-full cursor-pointer w-1/2'> Add Question</button>
 
         </div>
       </Modal>
