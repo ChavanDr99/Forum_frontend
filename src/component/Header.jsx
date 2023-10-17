@@ -40,7 +40,7 @@ const Header = () => {
           questionUrl: InputUrl,
           user: user,
         }
-        const result = await axios.post("http://localhost:3000/api/questions", { data: body });
+        const result = await axios.post("https://forum-tc0y.onrender.com/api/questions", { data: body });
         console.log(result);
         if (result.data.status) {
           toast.success('Question added successfully!', {

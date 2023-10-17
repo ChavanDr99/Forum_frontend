@@ -10,7 +10,7 @@ const Feed = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/questions")
+      .get("https://forum-tc0y.onrender.com/api/questions")
       .then((res) => {
         console.log(res.data.reverse());
         setPosts(res.data);
