@@ -8,7 +8,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCTEnVV57wTNXQ0vM_LnEaBNRfL16tWmIA",
-  authDomain: "forum1-85408.firebaseapp.com",
+  authDomain: "https://forumgpm.netlify.app/",
   projectId: "forum1-85408",
   storageBucket: "forum1-85408.appspot.com",
   messagingSenderId: "1005283359225",
