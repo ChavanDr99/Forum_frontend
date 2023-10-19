@@ -58,7 +58,7 @@ const Post = ({ post ,index}) => {
         user: user,
       };
       try {
-        const res = await axios.post("https://forum-tc0y.onrender.com/api/answers", body, config);
+        const res = await axios.post("https://forum-backend-sooty.vercel.app/api/answers", body, config);
         console.log(res.data);
         toast.success('Answer added successfully!', {
           position:"top-center  "

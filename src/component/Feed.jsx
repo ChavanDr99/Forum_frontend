@@ -10,7 +10,7 @@ const Feed = () => {
 
   useEffect(() => {
     axios
-      .get("https://forum-tc0y.onrender.com/api/questions")
+      .get("https://forum-backend-sooty.vercel.app/api/questions")
       .then((res) => {
         console.log(res.data.reverse());
         setPosts(res.data);
