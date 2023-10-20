@@ -41,7 +41,8 @@ const Post = ({ post ,index}) => {
   const toggleAnswers = () => {
     setShowAnswers(!showAnswers);
   };
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+     e.preventDefault();
 
     if (answer === null || answer.trim() === '') {
       toast.error("Please Enter your answer.");

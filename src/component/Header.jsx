@@ -88,8 +88,11 @@ const Header = () => {
             <Avatar src={user?.photo} />
           </span>
         </div>
-        <div className="bg-blue-500 rounded px-3 py-0   cursor-pointer hover:bg-blue-600 ">
+        {/* <div className="bg-blue-500 rounded px-3 py-0   cursor-pointer hover:bg-blue-600 ">
           <Button  className='font-sans hover:text-white md:font-serif'onClick={() => setIsModalOpen(true)} >Add Question</Button>
+        </div> */}
+         <div className="bg-blue-600 rounded px-5 py-2 border border-gray-500 cursor-pointer hover:bg-blue-700 ">
+          <button  className='font-sans text-white hover:text-gray-200 text-md 'onClick={() => setIsModalOpen(true)} >Add Question</button>
         </div>
         </div>
       </div>
