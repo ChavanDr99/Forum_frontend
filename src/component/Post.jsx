@@ -72,7 +72,7 @@ const Post = ({ post, index }) => {
           : "bg-white border border-gray-200"
       }`}
     >
-      <div className="p-4">
+      <div className="p-5">
         <div className="flex items-center">
           <Avatar src={post?.user?.photo} />
           <div className="ml-3">
