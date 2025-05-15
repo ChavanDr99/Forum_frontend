@@ -16,7 +16,7 @@ const Login = () => {
         <div className="flex items-center justify-center min-h-screen min-w-screen bg-black md:mb-0 ">
         <div className="flex md:mb-0 mb-12 items-center justify-center flex-col bg-black text-white">
           <Spin />
-          <h1 className="text-2xl md:text-3xl  font-semibold mt-6 font-sans md:font-serif">Welcome To IT Dept Community</h1>
+          <h1 className="text-2xl md:text-3xl  font-semibold mt-6 font-sans md:font-serif">Welcome To Vjti Community</h1>
           <p className="text-sm text-gray-400 mt-2 font-sans md:font-serif">Please Log In To Continue</p>
           <button
             onClick={handleSubmit}

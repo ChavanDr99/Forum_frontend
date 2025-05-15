@@ -6,7 +6,9 @@ import "./App.css";
 import { login, selectUser } from "./feature/userSlice";
 import { auth } from "./Firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import  { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
+import { ContextProvider } from "./component/Context"; 
+
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -23,17 +25,18 @@ function App() {
           })
         );
         console.log("AuthUser", authUser);
-     
       }
     });
   }, [dispatch]);
+
   return (
-    <div className="App">
-      {user ? <Forum/> : <Login />}
-      <Toaster />
-    </div>
-    
-  );  
+    <ContextProvider> {/* ✅ Context wrapped here */}
+      <div className="App">
+        {user ? <Forum /> : <Login />}
+        <Toaster />
+      </div>
+    </ContextProvider>
+  );
 }
 
 export default App;
