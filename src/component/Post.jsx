@@ -102,7 +102,7 @@ const Post = ({ post, index }) => {
             <img 
               src={post.questionUrl} 
               alt="url" 
-              className="max-w-full h-auto rounded-lg mb-4"
+              className="max-w-full h-auto ml-0 rounded-lg mb-4"
             />
           )}
         </div>
