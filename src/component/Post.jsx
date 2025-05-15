@@ -75,7 +75,7 @@ const Post = ({ post, index }) => {
       <div className="p-5">
         <div className="flex items-center">
           <Avatar src={post?.user?.photo} />
-          <div className="ml-3">
+          <div className="ml-2">
             <h4 className={`text-sm font-medium ${
               siteMode === "dark" ? "text-gray-300" : "text-gray-800"
             }`}>
